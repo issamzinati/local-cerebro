@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  cerebro:
+    build:
+      context: cerebro/
+    volumes:
+      - ./cerebro/config/:/opt/cerebro/altconfig
+    ports:
+      - "9000:9000"
